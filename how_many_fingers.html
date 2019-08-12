@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>how many finger challenge</title>
+	<style type="text/css">
+		body{
+			background-color: rgba(10,130,40,0.5);
+		}
+		div {
+			text-align: center;
+			width: 260px;
+			background-color: yellow;
+			border: 9px red solid;
+			position: relative;
+            top: 190px;
+            left: 40%;
+			padding: 40px;
+			border-radius: 45px; 
+		}
+	</style>
+</head>
+<body><hr>
+	<div>
+ <h2> <i>How many finger am I holding up??</i></h2>
+ <p>
+ 	<select id="guess">
+ 		<option>0</option>
+ 		<option>1</option>
+ 		<option>2</option>
+ 		<option>3</option>
+ 		<option>4</option>
+ 		<option>5</option>
+ 	</select>
+ </p> 
+ <!--<p><input type="text" id="guess" placeholder="Enter number of finger"></p>
+ <p>--><button id="checkGuess">Guess!</button></p>
+</div>
+
+ <script type="text/javascript">
+ 	document.getElementById("checkGuess").onclick = function() {
+     var rno = Math.floor(Math.random() * 6); 
+       if(document.getElementById("guess").value == rno) {
+ 		alert("Right guess!!");
+ 		} else {
+         alert("Try again!,I hold " + rno +" finger");
+ 		}
+ 	}
+ 	//
+ </script>
+
+</body>
+</html>
